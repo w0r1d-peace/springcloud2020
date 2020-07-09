@@ -3,6 +3,7 @@ package com.islet.springcloud.controller;
 import com.islet.springcloud.entities.CommonResult;
 import com.islet.springcloud.entities.Payment;
 import com.islet.springcloud.service.PaymentService;
+import com.mysql.jdbc.TimeUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.ServiceInstance;
@@ -70,6 +71,16 @@ public class PaymentController {
 
     @GetMapping(value = "/payment/lb")
     public String getPaymentLB() {
+        return serverPort;
+    }
+
+    @GetMapping(value = "/payment/feign/timeout")
+    public String paymentFeignTimeout() {
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return serverPort;
     }
 }
