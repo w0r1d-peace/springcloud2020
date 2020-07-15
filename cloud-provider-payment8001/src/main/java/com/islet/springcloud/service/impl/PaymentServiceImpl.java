@@ -1,8 +1,8 @@
 package com.islet.springcloud.service.impl;
 
+import com.islet.springcloud.service.PaymentService;
 import com.islet.springcloud.dao.PaymentDao;
 import com.islet.springcloud.entities.Payment;
-import com.islet.springcloud.service.PaymentService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

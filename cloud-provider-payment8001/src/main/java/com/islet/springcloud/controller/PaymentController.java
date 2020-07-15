@@ -1,9 +1,8 @@
 package com.islet.springcloud.controller;
 
+import com.islet.springcloud.service.PaymentService;
 import com.islet.springcloud.entities.CommonResult;
 import com.islet.springcloud.entities.Payment;
-import com.islet.springcloud.service.PaymentService;
-import com.mysql.jdbc.TimeUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.ServiceInstance;

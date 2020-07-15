@@ -1,4 +1,4 @@
-package com.islet.myrule;
+package com.islet.springcloud.myrule;
 
 import com.netflix.loadbalancer.IRule;
 import com.netflix.loadbalancer.RandomRule;
